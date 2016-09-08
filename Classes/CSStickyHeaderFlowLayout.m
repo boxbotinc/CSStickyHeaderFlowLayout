@@ -158,9 +158,9 @@ static const NSInteger kHeaderZIndex = 1024;
                     header = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                                                                   atIndexPath:[NSIndexPath indexPathForItem:0 inSection:indexPath.section]];
                     
-                    if (!CGSizeEqualToSize(CGSizeZero, header.frame.size)) {
-                        [allItems addObject:header];
-                    }
+                    // if (!CGSizeEqualToSize(CGSizeZero, header.frame.size)) {
+                        // [allItems addObject:header];
+                    // }
                 }
                 if (!CGSizeEqualToSize(CGSizeZero, header.frame.size)) {
                     [self updateHeaderAttributes:header lastCellAttributes:lastCells[indexPathKey]];
